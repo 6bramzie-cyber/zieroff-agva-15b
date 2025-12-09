@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Braylin's Bakery — Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Braylin's Bakery</h1>
+  <img src="https://i.imgur.com/1M4T23N.png" alt="Bakery Logo" style="width:120px; margin-top:10px;">
+</header>
+
+<nav>
+  <ul class="nav-links">
+    <li><a href="home.html">Home</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+    <li><a href="#">Products & Services</a></li>
+  </ul>
+</nav>
+
+<div class="two-column">
+  <aside class="sidebar">
+    <img src="https://i.imgur.com/1M4T23N.png" alt="Bakery Logo">
+    <h3>What We Offer</h3>
+    <ul>
+      <li>Fresh homemade cookies</li>
+      <li>Custom cakes for any event</li>
+      <li>Daily discounts & specials</li>
+    </ul>
+  </aside>
+
+  <main class="main-area">
+    <h1>Welcome to Braylin's Bakery!</h1>
+    <p class="slogan"><b>“Made with Grandma’s secret recipe!”</b></p>
+    <p>
+      My business is a great investment for young investors looking to earn easy money. 
+      Braylin's Bakery will boom because our cookies are better than 100% of the leading brands. 
+      If there was an award for best cookies, we would have all of them.
+    </p>
+  </main>
+</div>
+
+<!-- Special Offers Section -->
+<div class="features" id="special-offers">
+  <div class="feature-box">
+    <h2>Fresh-Baked Daily</h2>
+    <p>Stop by anytime and enjoy warm cookies straight out of the oven!</p>
+  </div>
+
+  <div class="feature-box">
+    <h2>Special Offers</h2>
+    <p>Buy 2 dozen cookies, get a free brownie! Limited-time deal!</p>
+  </div>
+</div>
+
+<button onclick="toggleOffers()">Hide / Show Offers</button>
+
+<script>
+function toggleOffers() {
+  var x = document.getElementById("special-offers");
+  if (x.style.display === "none") {
+    x.style.display = "grid";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+
+<footer>
+  <p>© 2025 Braylin's Bakery — Baked with love daily.</p>
+</footer>
+
+</body>
+</html>
